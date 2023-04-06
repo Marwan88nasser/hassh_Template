@@ -1,0 +1,102 @@
+* {
+  @include reset-all;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  font-family: "Cairo", sans-serif;
+  font-size: 14px;
+  background-color: $main-bg;
+  color: $mian-text-color;
+}
+ul {
+  @include reset-ul;
+}
+a {
+  @include a-reset;
+}
+// reset btn
+button {
+  border: none;
+  outline: none;
+}
+
+// Reset Input
+input:focus,
+select:focus {
+  outline: none;
+}
+
+input {
+  direction: rtl !important;
+  &:focus::placeholder {
+    opacity: 0;
+    transition: $sm-transition;
+  }
+}
+
+.section-bg {
+  background-color: $section-color;
+}
+
+.flex-center {
+  @include flex-center;
+}
+.flex-center-column {
+  flex-direction: column;
+  @include flex-center;
+}
+
+// Responsive Fonts
+// in tablet
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+  .t-m {
+    font-size: 53px !important;
+  }
+  .s-t {
+    font-size: 38px !important;
+  }
+  .btn-alt {
+    font-size: 13px;
+  }
+}
+// in mobile
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+  .t-m {
+    text-align: center;
+    font-size: 50px !important;
+  }
+  .s-t {
+    text-align: center;
+    font-size: 40px !important;
+  }
+  .btn-alt {
+    margin: auto;
+    font-size: 14px;
+  }
+}
+
+.gray-text {
+  color: $gray-text;
+}
+.bg-gray {
+  background-color: $gray-color;
+}
+
+// in mobile small
+@include maxWidth(xs) {
+  .t-m {
+    text-align: center;
+    font-size: 35px !important;
+  }
+  .s-t {
+    text-align: center;
+    font-size: 30px !important;
+  }
+  .btn-alt {
+    margin: auto;
+    font-size: 13px;
+  }
+}

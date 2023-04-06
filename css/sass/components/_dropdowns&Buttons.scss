@@ -1,0 +1,31 @@
+.main-btn {
+  padding: 4px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: $sm-transition;
+  color: $white-color;
+  background-color: $main-color;
+  &:hover {
+    background-color: $main-color-dark;
+  }
+  &.full {
+    width: 100%;
+  }
+}
+
+.btn-alt {
+  padding: 4px 30px;
+  font-size: 16px;
+  color: $white-color;
+  background-color: $alt-color;
+  &.pill {
+    border-radius: 59px;
+  }
+  &.bg-p {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+  &.full {
+    width: 100%;
+  }
+}
