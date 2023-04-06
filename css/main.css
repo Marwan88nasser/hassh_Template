@@ -200,6 +200,14 @@ input:focus::placeholder {
   justify-content: center;
 }
 
+.gray-text {
+  color: #7b7b7b;
+}
+
+.bg-gray {
+  background-color: #d0d0d0;
+}
+
 @media (min-width: 767.98px) and (max-width: 991.98px) {
   .t-m {
     font-size: 53px !important;
@@ -208,7 +216,15 @@ input:focus::placeholder {
     font-size: 38px !important;
   }
   .btn-alt {
-    font-size: 13px;
+    font-size: 13px !important;
+  }
+  .box-white .input-group .form-select {
+    font-weight: bold !important;
+    font-size: 20px !important;
+  }
+  .box-white .input-group .input-group-text {
+    font-size: 13px !important;
+    width: 100px !important;
   }
 }
 @media (min-width: 575.98px) and (max-width: 767.98px) {
@@ -222,17 +238,9 @@ input:focus::placeholder {
   }
   .btn-alt {
     margin: auto;
-    font-size: 14px;
+    font-size: 15px !important;
   }
 }
-.gray-text {
-  color: #7b7b7b;
-}
-
-.bg-gray {
-  background-color: #d0d0d0;
-}
-
 @media (max-width: 575.98px) {
   .t-m {
     text-align: center;
@@ -244,7 +252,7 @@ input:focus::placeholder {
   }
   .btn-alt {
     margin: auto;
-    font-size: 13px;
+    font-size: 13px !important;
   }
 }
 .main-nav {
@@ -379,7 +387,7 @@ input:focus::placeholder {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 23px;
   color: #071028;
   padding-right: 20px;
 }
@@ -392,6 +400,6 @@ input:focus::placeholder {
   color: #7b7b7b;
   font-weight: 500;
   justify-content: center;
-  font-size: 16px;
+  font-size: 15px;
   width: 140px;
 }/*# sourceMappingURL=main.css.map */

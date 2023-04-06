@@ -49,6 +49,13 @@ input {
   @include flex-center;
 }
 
+.gray-text {
+  color: $gray-text;
+}
+.bg-gray {
+  background-color: $gray-color;
+}
+
 // Responsive Fonts
 // in tablet
 @media (min-width: 767.98px) and (max-width: 991.98px) {
@@ -59,7 +66,19 @@ input {
     font-size: 38px !important;
   }
   .btn-alt {
-    font-size: 13px;
+    font-size: 13px !important;
+  }
+  .box-white {
+    .input-group {
+      .form-select {
+        font-weight: bold !important;
+        font-size: 20px !important;
+      }
+      .input-group-text {
+        font-size: 13px !important;
+        width: 100px !important;
+      }
+    }
   }
 }
 // in mobile
@@ -74,17 +93,9 @@ input {
   }
   .btn-alt {
     margin: auto;
-    font-size: 14px;
+    font-size: 15px !important;
   }
 }
-
-.gray-text {
-  color: $gray-text;
-}
-.bg-gray {
-  background-color: $gray-color;
-}
-
 // in mobile small
 @include maxWidth(xs) {
   .t-m {
@@ -97,6 +108,6 @@ input {
   }
   .btn-alt {
     margin: auto;
-    font-size: 13px;
+    font-size: 13px !important;
   }
 }
