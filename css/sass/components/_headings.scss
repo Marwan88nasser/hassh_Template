@@ -1,6 +1,43 @@
+.main-heading {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+  color: $alt-color;
+  font-weight: 700;
+  font-size: 35px;
+  margin-bottom: 95px;
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: -25px;
+    left: 20px;
+    height: 3px;
+    width: calc(100% - 40px);
+    background-color: $main-color;
+  }
+  &.sm-mb {
+    margin-bottom: 70px;
+  }
+}
+.medium-heading {
+  color: $main-color;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+}
 .small-heading {
   color: $alt-color;
   font-weight: 700;
   font-size: 15px;
-  letter-spacing: 1.0px;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+}
+
+.title-heading {
+  width: fit-content;
+  margin: 0px auto;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 35px;
 }

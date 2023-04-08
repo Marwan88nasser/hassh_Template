@@ -4,3 +4,101 @@
   border: 1px solid rgba(7, 16, 40, 0.4);
   background-color: $white-color;
 }
+
+.blocks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  &.j-two {
+    gap: 150px;
+    .box-gray {
+      &.column-content {
+        &:not(:last-child) {
+          &::before {
+            left: -75px;
+          }
+        }
+      }
+    }
+    
+  }
+}
+
+.box-gray {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  background-color: $light-gray-color;
+  padding: 20px;
+  border-radius: 20px;
+  &.no-rounded {
+    border-radius: 0;
+  }
+  &.column-content {
+    @include flex-center-column;
+    min-height: 260px;
+    padding: 20px 50px;
+    .img-holder {
+      margin-bottom: 10px;
+      width: 70px;
+      height: 60px;
+      img {
+        @include full-w-h;
+        object-fit: contain;
+      }
+    }
+    .name {
+      font-weight: 700;
+      font-size: 25px;
+      margin-bottom: 20px;
+    }
+    .des {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 25px;
+      margin-bottom: 0;
+    }
+    &:not(:last-child) {
+      &::before {
+        position: absolute;
+        content: "";
+        left: -15px;
+        top: 50%;
+        width: 3px;
+        height: calc(100% - 20px);
+        transform: translateY(-50%);
+        background-color: $alt-color;
+        opacity: 0.6;
+        border-radius: 80px;
+      }
+    }
+  }
+}
+
+
+.box-border {
+  position: relative;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  border: 4px solid $main-color;
+  min-height: 100px;
+  padding: 20px;
+  color: $alt-color;
+  .number {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  .icon {
+    position: absolute;
+    left: 15px;
+    top: calc(50% - 10px);
+    transform: translateY(-50%);
+    i,svg {
+      font-size: 37px;
+    }
+  }
+  .name {
+    font-size: 25px;
+    font-weight: 700;
+  }
+}
