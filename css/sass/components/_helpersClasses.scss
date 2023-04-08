@@ -79,6 +79,9 @@
 .alt-color {
   color: $alt-color;
 }
+.gray-color {
+  color: $gray-text;
+}
 .color-222 {
   color: #222;
 }
@@ -87,6 +90,11 @@
 }
 .green-color {
   color: #3bc100;
+}
+
+// Background Color
+.bg-gray {
+  background-color: $gray-color;
 }
 
 // Print Media

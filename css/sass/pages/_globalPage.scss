@@ -28,7 +28,6 @@ input:focus,
 select:focus {
   outline: none;
 }
-
 input {
   direction: rtl !important;
   &:focus::placeholder {
@@ -45,21 +44,11 @@ input, select, textarea {
   }
 }
 
+// Global Main Classes
 .section-border {
   border-bottom: 13px solid $main-color;
   padding-bottom: 75px !important;
 }
-.section-bg {
-  background-color: $section-color;
-}
-
-.gray-text {
-  color: $gray-text;
-}
-.bg-gray {
-  background-color: $gray-color;
-}
-
 .won-hr {
   width: 100%;
   height: 3px;

@@ -9,6 +9,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
+  // Start Nested Class J-two
   &.j-two {
     gap: 150px;
     .box-gray {
@@ -31,9 +32,7 @@
   background-color: $light-gray-color;
   padding: 20px;
   border-radius: 20px;
-  &.no-rounded {
-    border-radius: 0;
-  }
+  // Start Nested Class Column Content
   &.column-content {
     @include flex-center-column;
     min-height: 260px;
