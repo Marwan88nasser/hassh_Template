@@ -42,3 +42,61 @@
     }
   }
 }
+
+.faq {
+  .accordion-item {
+    border-radius: 10px;
+    border: 0;
+    .accordion-header {
+      .accordion-button {
+        font-weight: 700;
+        font-size: 17px;
+        border-radius: 10px;
+        background-color: $white-color;
+        color: $alt-color-light;
+        opacity: 0.65;
+        padding: 20px 16px;
+        box-shadow: none;
+        &::after {
+          background-position: center;
+          opacity: 1;
+          background-image: url("../img/plus.png");
+        }
+        &[aria-expanded="true"] {
+          &::after {
+            opacity: 1;
+            transform: none;
+            background-image: url("../img/minus.png");
+          }
+        }
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.partners {
+  .partners-container {
+    @include flex-between;
+    gap: 30px;
+    background-color: $white-color;
+    padding: 3px 10px;
+    .partner-img {
+      position: relative;
+      img {
+        width: 90px;
+      }
+      &.floor {
+        img {
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          top: -80px;
+          width: 150px;
+        }
+      }
+    }
+  }
+}

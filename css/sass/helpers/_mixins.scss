@@ -62,9 +62,9 @@
   left: 0%;
 }
 // reset circle
-@mixin circle($width, $height) {
-  width: $width;
-  height: $height;
+@mixin circle($dimension) {
+  width: $dimension;
+  height: $dimension;
   border-radius: 50%;
 }
 //Edit Element On Different Screens

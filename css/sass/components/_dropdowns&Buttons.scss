@@ -6,17 +6,31 @@
   color: $white-color;
   background-color: $main-color;
   &:hover {
+    color: $white-color;
     background-color: $main-color-dark;
   }
 }
 
 .btn-alt {
   padding: 4px 30px;
+  border-radius: 12px;
   font-size: 16px;
   color: $white-color;
+  transition: $sm-transition;
   background-color: $alt-color;
+  &:hover {
+    background-color: $alt-color-light;
+    color: $white-color;
+  }
   &.bg-p {
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+  &.alt-light-bg {
+    background-color: $alt-color-light;
+    &:hover {
+      background-color: $alt-color;
+      color: $white-color;
+    }
   }
 }

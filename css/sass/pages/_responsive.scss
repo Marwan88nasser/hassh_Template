@@ -5,7 +5,7 @@
     font-size: 38px !important;
   }
   .btn-alt {
-    font-size: 13px !important;
+    font-size: 16px !important;
   }
   .Landing {
     .box-white {
@@ -35,13 +35,36 @@
     }
     .box-gray {
       &.column-content {
-      .name {
-        font-size: 18px;
-        margin-bottom: 10px;
+        .name {
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+        .des {
+          font-size: 12px;
+        }
       }
-      .des {
-        font-size: 12px;
+    }
+  }
+  .main-table {
+    thead {
+      th {
+        font-size: 15px;
       }
+    }
+  }
+  .partners {
+    .partners-container {
+      gap: 12px;
+      .partner-img {
+        img {
+          width: 80px;
+        }
+        &.floor {
+          img {
+            top: -60px;
+            width: 110px;
+          }
+        }
       }
     }
   }
@@ -69,6 +92,12 @@
           }
         }
       }
+    }
+  }
+  .box-subscribe {
+    margin-top: 35px;
+    .title {
+      font-size: 16px;
     }
   }
 }
@@ -102,6 +131,29 @@
       }
     }
   }
+  .main-table {
+    thead {
+      th {
+        font-size: 16px;
+      }
+    }
+  }
+  .partners {
+    .partners-container {
+      gap: 6px;
+      .partner-img {
+        img {
+          width: 60px;
+        }
+        &.floor {
+          img {
+            top: -55px;
+            width: 90px;
+          }
+        }
+      }
+    }
+  }
 }
 // In Extra Small Screen
 @include maxWidth(xs) {
@@ -116,7 +168,7 @@
   }
   .btn-alt {
     margin: auto;
-    font-size: 13px !important;
+    font-size: 14px !important;
     text-align: center;
   }
   .Landing {
@@ -156,12 +208,92 @@
       font-size: 30px;
     }
     .icon {
-      i,svg {
+      i,
+      svg {
         font-size: 35px;
       }
     }
     .name {
       font-size: 25px;
     }
+  }
+  .main-info {
+    font-size: 15px;
+  }
+  .circle-number {
+    font-size: 28px;
+  }
+  .faq {
+    .accordion-item {
+      .accordion-header {
+        .accordion-button {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .main-table {
+    thead {
+      th {
+        font-size: 13px;
+      }
+    }
+  }
+  .box-subscribe {
+    margin-top: 30px;
+    .title {
+      margin-bottom: 20px;
+      font-size: 14px;
+      text-align: center;
+    }
+    .holder {
+      input {
+        width: 100%;
+
+        &::placeholder {
+          font-size: 15px;
+        }
+      }
+    }
+    button {
+      font-size: 15px;
+      padding: 6px 20px;
+    }
+  }
+  .faq {
+    .accordion-item {
+      .accordion-header {
+        .accordion-button {
+          font-size: 14px;
+          &::after {
+            background-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+  .partners {
+    .partners-container {
+      position: relative;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 3px 10px 15px;
+      .partner-img {
+        position: unset;
+        img {
+          width: 70px;
+        }
+        &.floor {
+          img {
+            top: -20px;
+            width: 80px;
+          }
+        }
+      }
+    }
+  }
+  .image-custom-one img {
+    object-fit: contain;
   }
 }

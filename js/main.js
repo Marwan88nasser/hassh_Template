@@ -1,6 +1,8 @@
 var swiper = new Swiper(".testimonial-swiper", {
-  spaceBetween: 30,
+  spaceBetween: 20,
   centeredSlides: true,
+  speed: 1500,
+  loop: true,
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
@@ -8,10 +10,6 @@ var swiper = new Swiper(".testimonial-swiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
   },
 });
 

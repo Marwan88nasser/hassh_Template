@@ -6,7 +6,7 @@ html {
 }
 body {
   min-height: 100vh;
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: 14px;
   background-color: $main-bg;
   color: $main-text-color;
@@ -35,7 +35,9 @@ input {
     transition: $sm-transition;
   }
 }
-input, select, textarea {
+input,
+select,
+textarea {
   transition: $sm-transition;
   &:focus {
     transition: $sm-transition;
@@ -52,6 +54,109 @@ input, select, textarea {
 .won-hr {
   width: 100%;
   height: 3px;
-  opacity: .6;
+  opacity: 0.6;
   background-color: $alt-color;
+}
+
+.list-disc {
+  list-style: disc;
+}
+
+.circle-number {
+  @include circle(54px);
+  @include flex-center;
+  font-size: 35px;
+  font-weight: 600;
+  color: $white-color;
+  background-color: #fb9612;
+}
+
+.main-info {
+  flex-grow: 1;
+  padding: 12px 25px;
+  border-radius: 60px;
+  font-size: 18px;
+  font-weight: 600;
+  opacity: 0.77;
+  box-shadow: 0px 2.48506px 2.48506px rgba(0, 0, 0, 0.25);
+  color: $white-color;
+  background-color: #fb9612;
+}
+
+.image-custom-one {
+  width: 100%;
+  height: 235px;
+  img {
+    @include full-w-h;
+    object-fit: cover;
+  }
+  &.long-height {
+    height: 350px;
+    img {
+      object-fit: unset;
+    }
+  }
+}
+
+// Slider Swiper
+.testimonial-swiper {
+  height: fit-content;
+  padding-bottom: 40px;
+  .swiper-pagination {
+    bottom: 0px;
+    .swiper-pagination-bullet {
+      width: 13px;
+      height: 6px;
+      border-radius: 10px;
+      background-color: #625f5f;
+      transition: $main-transition;
+      &.swiper-pagination-bullet-active {
+        width: 22px;
+        background-color: $main-color;
+      }
+    }
+  }
+}
+
+// Tables Style
+.main-table {
+  background: rgba(217, 217, 217, 0.5);
+  border-radius: 20px;
+  thead {
+    th {
+      text-align: center;
+      border: 2px solid $white-color;
+      border-top: 0;
+      padding: 20px;
+      font-weight: 700;
+      font-size: 18px;
+      vertical-align: middle;
+      color: $alt-color-light;
+      opacity: 0.75;
+      &:first-child {
+        border-right: 0;
+      }
+      &:last-child {
+        border-left: 0;
+      }
+    }
+  }
+  tbody {
+    td {
+      border: 2px solid $white-color;
+      border-bottom: 0;
+      padding: 20px;
+      font-weight: 600;
+      font-size: 17px;
+      text-align: center;
+      color: $alt-color-light;
+      opacity: 0.75;
+      &:first-child {
+        border-right: 0;
+      }
+      &:last-child {
+        border-left: 0;
+      }
+    }
+  }
 }
