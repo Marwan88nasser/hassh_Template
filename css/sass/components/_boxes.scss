@@ -8,7 +8,7 @@
 .blocks-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 30px;
+  gap: 25px;
   // Start Nested Class J-two
   &.j-two {
     gap: 150px;
@@ -35,7 +35,7 @@
   &.column-content {
     @include flex-center-column;
     min-height: 260px;
-    padding: 20px 50px;
+    padding: 20px 45px;
     .img-holder {
       margin-bottom: 10px;
       width: 70px;
@@ -48,11 +48,11 @@
     .name {
       font-weight: 700;
       font-size: 25px;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
     .des {
       font-weight: 700;
-      font-size: 14px;
+      font-size: 13px;
       line-height: 25px;
       margin-bottom: 0;
     }
@@ -60,7 +60,7 @@
       &::before {
         position: absolute;
         content: "";
-        left: -15px;
+        left: -13px;
         top: 50%;
         width: 3px;
         height: calc(100% - 15px);
@@ -91,6 +91,21 @@
     }
     .des {
       font-size: 16px;
+      opacity: 0.75;
+    }
+  }
+  // State
+  &.state {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0;
+    direction: ltr;
+    width: fit-content;
+    margin: 0 auto;
+    .state-number {
+      color: $alt-color;
+      font-size: 18px;
+      font-weight: 600;
       opacity: 0.75;
     }
   }

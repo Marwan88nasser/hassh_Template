@@ -1,11 +1,19 @@
 // Responsive Fonts
 // In Medium Screen
 @media (min-width: 767.98px) and (max-width: 991.98px) {
+  .main-heading {
+    font-size: 45px;
+    &.sm-mb {
+      margin-bottom: 55px !important;
+    }
+  }
   .t-s {
     font-size: 38px !important;
+    margin-bottom: 20px !important;
   }
   .btn-alt {
-    font-size: 16px !important;
+    font-size: 14px !important;
+    text-align: center;
   }
   .Landing {
     .box-white {
@@ -18,6 +26,14 @@
     }
   }
   .blocks-grid {
+    .box-gray {
+      &.column-content {
+        padding: 25px !important;
+        .des {
+          font-size: 12px !important;
+        }
+      }
+    }
     &.j-two {
       .box-gray {
         &.column-content {
@@ -103,6 +119,12 @@
 }
 // In Small Screen
 @media (min-width: 575.98px) and (max-width: 767.98px) {
+  .main-heading {
+    font-size: 34px;
+    &.sm-mb {
+      margin-bottom: 55px !important;
+    }
+  }
   .t-m {
     text-align: center;
     font-size: 50px !important;
@@ -110,10 +132,19 @@
   .t-s {
     text-align: center;
     font-size: 40px !important;
+    margin-bottom: 22px !important;
   }
   .btn-alt {
     margin: auto;
     font-size: 15px !important;
+  }
+  .box-gray {
+    &.column-content {
+      padding: 20px !important;
+      .des {
+        font-size: 12px !important;
+      }
+    }
   }
   .j-two {
     gap: 30px !important;
@@ -154,17 +185,22 @@
       }
     }
   }
+  .w-fit-full {
+    width: 100% !important;
+  }
 }
 // In Extra Small Screen
 @include maxWidth(xs) {
   .t-m {
     text-align: center;
-    font-size: 35px !important;
+    font-size: 43px !important;
+    line-height: 70px !important;
   }
   .t-s {
     text-align: center;
-    font-size: 30px !important;
+    font-size: 33px !important;
     line-height: 55px !important;
+    margin-bottom: 20px !important;
   }
   .btn-alt {
     margin: auto;
@@ -186,9 +222,17 @@
     }
   }
   .main-heading {
-    font-size: 25px;
+    font-size: 23px;
     &.sm-mb {
       margin-bottom: 55px !important;
+    }
+  }
+  .box-gray {
+    &.column-content {
+      padding: 20px !important;
+      .des {
+        font-size: 12px !important;
+      }
     }
   }
   .j-two {
@@ -249,7 +293,6 @@
     .holder {
       input {
         width: 100%;
-
         &::placeholder {
           font-size: 15px;
         }

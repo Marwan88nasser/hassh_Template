@@ -7,6 +7,10 @@
 .flex-center {
   @include flex-center;
 }
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
 .flex-center-column {
   flex-direction: column;
   @include flex-center;
