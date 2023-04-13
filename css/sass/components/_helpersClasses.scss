@@ -23,25 +23,25 @@
 
 // Font Size
 .fs-10px {
-  font-size: 10px;
+  font-size: 10px !important;
 }
 .fs-11px {
-  font-size: 11px;
+  font-size: 11px !important;
 }
 .fs-12 {
-  font-size: 12px;
+  font-size: 12px !important;
 }
 .fs-13px {
-  font-size: 13px;
+  font-size: 13px !important;
 }
 .fs-14px {
-  font-size: 14px;
+  font-size: 14px !important;
 }
 .fs-15px {
-  font-size: 15px;
+  font-size: 15px !important;
 }
 .fs-16px {
-  font-size: 16px;
+  font-size: 16px !important;
 }
 .fs-17px {
   font-size: 17px !important;
@@ -50,7 +50,7 @@
   font-size: 18px !important;
 }
 .fs-19px {
-  font-size: 19px;
+  font-size: 19px !important;
 }
 .fs-20px {
   font-size: 20px !important;
@@ -71,7 +71,22 @@
   font-size: 25px !important;
 }
 .fs-26px {
-  font-size: 26px;
+  font-size: 26px !important;
+}
+.fs-27px {
+  font-size: 27px !important;
+}
+.fs-28px {
+  font-size: 28px !important;
+}
+.fs-29px {
+  font-size: 29px !important;
+}
+.fs-30px {
+  font-size: 30px !important;
+}
+.fs-50px {
+  font-size: 50px !important;
 }
 
 // Font Weight
@@ -93,13 +108,16 @@
 
 // Color
 .main-color {
-  color: $main-color;
+  color: $main-color !important;
 }
 .alt-color {
-  color: $alt-color;
+  color: $alt-color !important;
 }
 .alt-color-light {
   color: $alt-color-light !important;
+}
+.alt-21293E {
+  color: #21293E !important;
 }
 .gray-color {
   color: $gray-text;
@@ -143,4 +161,9 @@
 // Spacing
 .after-border-section {
   padding-top: 100px !important;
+}
+
+// line height 
+.lineh-1 {
+  line-height: 50px;
 }

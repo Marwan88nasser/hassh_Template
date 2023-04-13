@@ -20,6 +20,13 @@
     margin-bottom: 60px;
   }
 }
+.xl-heading {
+  color: $main-color;
+  font-weight: 700;
+  font-size: 35px;
+  letter-spacing: 1px;
+  margin-bottom: 0px;
+}
 .medium-heading {
   color: $main-color;
   font-weight: 700;
@@ -42,4 +49,20 @@
   font-weight: 700;
   font-size: 15px;
   line-height: 35px;
+}
+
+// Pages Title
+.page-heading {
+  font-size: 55px;
+  font-weight: 700;
+  color: $main-color;
+  line-height: 75px;
+  margin-bottom: 80px;
+}
+
+// Text Style
+.text-style-one {
+  font-weight: 700;
+  font-size: 19px;
+  margin-bottom: 50px;
 }

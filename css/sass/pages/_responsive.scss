@@ -12,7 +12,7 @@
     margin-bottom: 20px !important;
   }
   .btn-alt {
-    font-size: 14px !important;
+    font-size: 15px !important;
     text-align: center;
   }
   .Landing {
@@ -84,6 +84,18 @@
       }
     }
   }
+  .news-box {
+    .des {
+      .title {
+        font-size: 19px;
+      }
+      .date {
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
 }
 // In Extra Small Screen To Medium Screen (Little Bit)
 @media (max-width: 850px) {
@@ -113,7 +125,7 @@
   .box-subscribe {
     margin-top: 35px;
     .title {
-      font-size: 16px;
+      font-size: 16px !important;
     }
   }
 }
@@ -287,7 +299,7 @@
     margin-top: 30px;
     .title {
       margin-bottom: 20px;
-      font-size: 14px;
+      font-size: 14px !important;
       text-align: center;
     }
     .holder {
@@ -338,5 +350,17 @@
   }
   .image-custom-one img {
     object-fit: contain;
+  }
+  .news-box {
+    .des {
+      .title {
+        font-size: 18px;
+      }
+      .date {
+        p {
+          font-size: 14px;
+        }
+      }
+    }
   }
 }

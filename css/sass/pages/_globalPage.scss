@@ -4,6 +4,25 @@
 html {
   scroll-behavior: smooth;
 }
+/* start scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f6f6f6;
+  box-shadow: 0 0 5px 0px #ddd inset;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $main-color;
+  border-radius: 20px;
+  &:hover {
+    background-color: $main-color-dark;
+  }
+}
+/* end scroll bar */
 body {
   min-height: 100vh;
   font-family: "Cairo", sans-serif;
@@ -83,9 +102,10 @@ textarea {
   background-color: #fb9612;
 }
 
+// Image Custom
 .image-custom-one {
   width: 100%;
-  height: 235px;
+  height: 320px;
   img {
     @include full-w-h;
     object-fit: cover;
@@ -97,6 +117,14 @@ textarea {
     }
   }
 }
+.img-border {
+  width: 100%;
+  height: 380px;
+  img {
+    @include full-w-h;
+  }
+}
+
 
 // Slider Swiper
 .testimonial-swiper {

@@ -183,3 +183,131 @@
     }
   }
 }
+
+.box-white-rounded {
+  padding: 15px 40px;
+  border-radius: 40px;
+  box-shadow: 0px 2.48506px 2.48506px rgba(0, 0, 0, 0.25);
+  opacity: 0.77;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 35px;
+
+  color: #21293e;
+  background-color: $white-color;
+}
+
+.box-level {
+  @include flex-between;
+  gap: 20px;
+  .circle {
+    @include flex-center-column;
+    @include circle(130px);
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+    color: $white-color;
+    background-color: #fb9612;
+    span {
+      line-height: 1;
+      font-size: 23px;
+      margin-bottom: 3px;
+      display: block;
+      font-weight: 600;
+    }
+    p {
+      font-weight: 600;
+      margin-bottom: 7px;
+      font-size: 27px;
+      line-height: 1;
+    }
+    h6 {
+      font-size: 35px;
+      line-height: 1;
+      margin-bottom: 0;
+    }
+  }
+  @include maxWidth(sm) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.news-box {
+  display: block;
+  background-color: $light-gray-color;
+  border-radius: 15px 15px 20px 20px;
+  .img-holder {
+    width: 100%;
+    height: 250px;
+    img {
+      @include full-w-h;
+      object-fit: fill;
+    }
+  }
+  .des {
+    padding: 25px;
+    text-align: center;
+    .title {
+      font-weight: 700;
+      color: #21293E;
+      font-size: 22px;
+      margin-bottom: 30px
+    }
+    .date {
+      @include flex-between;
+      p {
+        margin-bottom: 0;
+        color: #62656C;
+        font-size: 16px;
+      }
+    }
+  }
+  &.show {
+    background-color: transparent;
+    border-radius: 0;
+    .img-holder {
+      height: 300px;
+      img {
+        object-fit: contain;
+        border-radius: 20px;
+      }
+    }
+    .des {
+      margin-bottom: 20px;
+      padding: 0;
+      .title {
+        margin-top: 35px;
+        font-size: 25px;
+      }
+    }
+    .date {
+      width: fit-content;
+      margin: 0 auto;
+      gap: 100px;
+      p {
+        font-size: 15px;
+      }
+    }
+    .text-content {
+      opacity: .70;
+      line-height: 32px;
+      font-weight: 600;
+      font-size: 16px;
+    }
+    @include maxWidth(sm) {
+      .img-holder {
+        height: 100%;
+      }
+      .des {
+        .title {
+          font-size: 18px;
+        }
+      }
+      .text-content {
+        font-size: 14px;
+      }
+    }
+  }
+}
